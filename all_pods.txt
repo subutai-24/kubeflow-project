@@ -1,0 +1,6 @@
+NAME                                  READY   STATUS    RESTARTS   AGE
+argocd-redis-759b6bc7f4-5z6j9         1/1     Running   0          89m
+argocd-repo-server-5ddd7d95b6-4svm5   1/1     Running   0          89m
+argocd-dex-server-66ff89cb7b-fcxbx    1/1     Running   0          89m
+argocd-application-controller-0       1/1     Running   0          89m
+argocd-server-7fd556c67c-5w65m        1/1     Running   0          89m
