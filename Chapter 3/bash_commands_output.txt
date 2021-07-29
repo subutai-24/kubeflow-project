@@ -1,0 +1,44 @@
+dev@1ba54418dd6e:/workspace/hello-world$ python basic_class.py
+2021-07-29 17:21:11.183642: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.2
+Downloading data from https://storage.googleapis.com/tensorflow/tf-keras-datasets/train-labels-idx1-ubyte.gz
+32768/29515 [=================================] - 0s 1us/step
+Downloading data from https://storage.googleapis.com/tensorflow/tf-keras-datasets/train-images-idx3-ubyte.gz
+26427392/26421880 [==============================] - 3s 0us/step
+Downloading data from https://storage.googleapis.com/tensorflow/tf-keras-datasets/t10k-labels-idx1-ubyte.gz
+8192/5148 [===============================================] - 0s 0us/step
+Downloading data from https://storage.googleapis.com/tensorflow/tf-keras-datasets/t10k-images-idx3-ubyte.gz
+4423680/4422102 [==============================] - 1s 0us/step
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow_core/python/ops/resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+Train on 60000 samples
+2021-07-29 17:21:26.032046: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda/extras/CUPTI/lib64:/usr/local/cuda/compat/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64
+2021-07-29 17:21:26.032164: E tensorflow/stream_executor/cuda/cuda_driver.cc:318] failed call to cuInit: UNKNOWN ERROR (303)
+2021-07-29 17:21:26.032202: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (1ba54418dd6e): /proc/driver/nvidia/version does not exist
+2021-07-29 17:21:26.136786: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 1800000000 Hz
+2021-07-29 17:21:26.137841: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x6575d90 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-07-29 17:21:26.137924: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+Epoch 1/10
+60000/60000 [==============================] - 12s 196us/sample - loss: 0.4995 - acc: 0.8251
+Epoch 2/10
+60000/60000 [==============================] - 12s 197us/sample - loss: 0.3770 - acc: 0.8622
+Epoch 3/10
+60000/60000 [==============================] - 11s 187us/sample - loss: 0.3371 - acc: 0.8764
+Epoch 4/10
+60000/60000 [==============================] - 12s 199us/sample - loss: 0.3132 - acc: 0.8846
+Epoch 5/10
+60000/60000 [==============================] - 12s 192us/sample - loss: 0.2952 - acc: 0.8920
+Epoch 6/10
+60000/60000 [==============================] - 12s 197us/sample - loss: 0.2806 - acc: 0.8959
+Epoch 7/10
+60000/60000 [==============================] - 12s 198us/sample - loss: 0.2692 - acc: 0.9000
+Epoch 8/10
+60000/60000 [==============================] - 12s 196us/sample - loss: 0.2566 - acc: 0.9050
+Epoch 9/10
+60000/60000 [==============================] - 11s 177us/sample - loss: 0.2449 - acc: 0.9089
+Epoch 10/10
+60000/60000 [==============================] - 12s 197us/sample - loss: 0.2388 - acc: 0.9087
+10000/10000 - 1s - loss: 0.3462 - acc: 0.8807
+
+Test accuracy: 0.8807
+
